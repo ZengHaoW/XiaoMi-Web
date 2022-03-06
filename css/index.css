@@ -1,0 +1,100 @@
+.container {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #333333;
+}
+
+.topbar a {
+    font-size: 12px;
+    line-height: 40px;
+    color: #b0b0b0;
+    display: block;
+}
+
+.topbar a:hover {
+    color: #fff;
+}
+
+.topbar li.line {
+    line-height: 40px;
+    color: #424242;
+    font-size: 12px;
+    margin: 0 8px;
+}
+
+.topbar-nav, .topbar li {
+    float: left;
+}
+
+/*li:hover>.app .app_qr {*/
+/*    display: block;*/
+/*}*/
+
+.topbar-nav .app_qr {
+    /*display: none;*/
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    /*height: 148px;*/
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    line-height: 1;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    transition: height 0.3s;
+}
+.app {
+    position: relative;
+}
+.app:hover .app_qr,
+.app:hover::after{
+    display: block;
+    height:148px;
+}
+.app::after {
+    display: none;
+    content:'';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom-color: white;
+
+    left:0;
+    right:0;
+    bottom:0;
+    margin: 0 auto;
+}
+
+.topbar-nav .app_qr span{
+    color: black;
+    font-size: 14px;
+}
+.topbar-nav .app_qr img {
+    width: 90px;
+    margin: 17px 17px;
+    margin-bottom: 10px;
+}
+.topbar-cart {
+    float: right;
+    margin-left: 25px;
+}
+.topbar-cart i {
+    margin-right: 4px;
+}
+.topbar-cart a {
+    width: 120px;
+    background: #424242;
+    text-align: center;
+}
+
+.topbar-cart:hover a{
+    background: #fff;
+    color: #ff6700
+}
+.topbar-info {
+    float: right;
+}
