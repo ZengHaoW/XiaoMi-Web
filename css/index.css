@@ -42,20 +42,23 @@
     background: #fff;
     line-height: 1;
     text-align: center;
-    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
     transition: height 0.3s;
 }
+
 .app {
     position: relative;
 }
+
 .app:hover .app_qr,
-.app:hover::after{
+.app:hover::after {
     display: block;
-    height:148px;
+    height: 148px;
 }
+
 .app::after {
     display: none;
-    content:'';
+    content: '';
     width: 0;
     height: 0;
     position: absolute;
@@ -63,28 +66,33 @@
     border-top: none;
     border-bottom-color: white;
 
-    left:0;
-    right:0;
-    bottom:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: 0 auto;
 }
 
-.topbar-nav .app_qr span{
+.topbar-nav .app_qr span {
     color: black;
     font-size: 14px;
 }
+
 .topbar-nav .app_qr img {
     width: 90px;
     margin: 17px 17px;
     margin-bottom: 10px;
 }
+
 .topbar-cart {
+    position: relative;
     float: right;
     margin-left: 25px;
 }
+
 .topbar-cart i {
     margin-right: 4px;
 }
+
 .topbar-cart a {
     width: 120px;
     background: #424242;
@@ -92,8 +100,34 @@
 }
 
 .topbar-cart:hover a{
+    display: block;
     background: #fff;
-    color: #ff6700
+    color: #ff6700;
+
+}
+.topbar-cart:hover .shopping-basket{
+
+    height: 100px;
+}
+.topbar-cart .shopping-basket {
+
+    position: absolute;
+    right: 0;
+
+    width: 316px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 3px 3px rgb(0, 0, 0, 0.3);
+    transition: height 0.3s;
+}
+.shopping-basket .item {
+    background: #fff;
+    margin: 10px 20px 20px;
+    padding: 20px 0;
+    color: #424242;
+
+
 }
 .topbar-info {
     float: right;
