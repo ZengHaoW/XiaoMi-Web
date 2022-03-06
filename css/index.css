@@ -100,16 +100,18 @@
     text-align: center;
 }
 
-.topbar-cart:hover a{
+.topbar-cart:hover a {
     display: block;
     background: #fff;
     color: #ff6700;
 
 }
-.topbar-cart:hover .shopping-basket{
+
+.topbar-cart:hover .shopping-basket {
 
     height: 100px;
 }
+
 .topbar-cart .shopping-basket {
 
     position: absolute;
@@ -123,6 +125,7 @@
     transition: height 0.3s;
     z-index: 9999;
 }
+
 .shopping-basket .item {
     background: #fff;
     margin: 10px 20px 20px;
@@ -131,12 +134,15 @@
 
 
 }
+
 .topbar-info {
     float: right;
 }
+
 .header-container {
     position: relative;
 }
+
 .header {
 
     height: 100px;
@@ -144,14 +150,16 @@
 }
 
 .header .logo {
-    float:left;
+    float: left;
     margin-top: 22px;
 }
-.header .logo img{
+
+.header .logo img {
     display: block;
     width: 56px;
     height: 56px;
 }
+
 .header .header-nav {
     float: left;
     height: 100px;
@@ -164,20 +172,23 @@
 .nav > li {
     float: left;
 }
+
 .all-goods-wrapper {
     position: relative;
 
 }
+
 .left-menu {
     width: 234px;
     height: 420px;
-    background: rgb(0,0,0,0.4);
+    background: rgb(0, 0, 0, 0.4);
     position: absolute;
     left: -120px;
     z-index: 999;
     line-height: 1;
     padding: 20px 0;
 }
+
 ul.left-menu li a {
     display: block;
     height: 42px;
@@ -187,22 +198,27 @@ ul.left-menu li a {
     padding: 0 30px;
     font-size: 14px;
 }
+
 ul.left-menu li a:hover {
-    color:white;
+    color: white;
     background: #ff6700;
 }
+
 .left-menu a i {
-    float:right;
+    float: right;
     line-height: 42px;
 }
-.header-nav li a{
+
+.header-nav li a {
     display: block;
     font-size: 16px;
     margin-right: 30px;
 }
+
 .header-nav li a:hover {
     color: #fff;
 }
+
 .all-goods {
     visibility: hidden;
 }
@@ -210,8 +226,8 @@ ul.left-menu li a:hover {
 .header-nav .goods-info {
     position: absolute;
     overflow: hidden;
-    top:100px;
-    left:0;
+    top: 100px;
+    left: 0;
     width: 100%;
     height: 0;
     background: #fff;
@@ -222,21 +238,22 @@ ul.left-menu li a:hover {
 }
 
 .header-nav li.show-goods:hover ~ .goods-info,
-.goods-info:hover{
+.goods-info:hover {
     height: 228px;
-    border-top:1px solid rgb(224,224,224);
-    box-shadow: 0 2px 2px rgb(0,0,0, 0.2);
+    border-top: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
 
 }
 
 .search-wrapper {
     width: 296px;
-    height:50px;
+    height: 50px;
     float: right;
     background: red;
     margin-top: 25px;
 
 }
+
 .search-wrapper .search-inp {
     box-sizing: border-box;
     float: left;
@@ -244,32 +261,96 @@ ul.left-menu li a:hover {
     padding: 0 10px;
     height: 50px;
     font-size: 16px;
-    border: 1px solid rgb(224,224,224);
+    border: 1px solid rgb(224, 224, 224);
     outline: none;
 }
+
 .search-wrapper .search-inp:focus {
     border: 1px solid #ff6700;
 }
 
-.search-wrapper .search-inp:focus + button{
+.search-wrapper .search-inp:focus + button {
     border: 1px solid #ff6700;
     border-left: none;
 }
+
 .search-wrapper .search-btn {
     float: left;
-    width:52px;
-    height:50px;
+    width: 52px;
+    height: 50px;
     padding: 0;
 
     background: #fff;
     color: #616161;
     font-size: 16px;
     outline: none;
-    border: 1px solid rgb(224,224,224);
+    border: 1px solid rgb(224, 224, 224);
     border-left: none;
 }
+
 .search-wrapper .search-btn:hover {
     background: #ff6700;
     color: white;
     border: none;
+}
+.banner-wrapper {
+    width: 100%;
+}
+.banner {
+    position: relative;
+    height: 460px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner li {
+    position: absolute;
+}
+
+.pointer {
+    position: absolute;
+    bottom:22px;
+    right: 35px;
+
+}
+
+.pointer a {
+    float: left;
+    width: 6px;
+    height: 6px;
+    background: rgb(0,0,0,0.4);
+    border: 2px rgb(255,255,255,0.4) solid;
+    border-radius: 50%;
+    margin-left:6px;
+}
+.pointer a:hover,
+.pointer a.active{
+    background: rgb(255,255,255,0.4);
+    border: 2px rgb(0,0,0,0.4) solid;
+}
+
+.prev-next a{
+    width: 41px;
+    height: 69px;
+    background-image: url("/img/icon-slides.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.prev-next .prev {
+    left: 234px;
+    background-position: -84px 0;;
+}
+.prev-next .prev:hover {
+    background-position: 1px 0;;
+}
+.prev-next .next:hover {
+    background-position: -42px 0;;
+}
+.prev-next .next {
+    right: 0;
+    background-position: -125px 0;;
 }
