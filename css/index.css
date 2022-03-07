@@ -216,7 +216,7 @@ ul.left-menu li a:hover {
 }
 
 .header-nav li a:hover {
-    color: #fff;
+    color: #ff6700;
 }
 
 .all-goods {
@@ -236,10 +236,10 @@ ul.left-menu li a:hover {
     transition: height 0.3s;
     z-index: 9999;
 }
-
 .header-nav li.show-goods:hover ~ .goods-info,
 .goods-info:hover {
     height: 228px;
+
     border-top: 1px solid rgb(224, 224, 224);
     box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
 
