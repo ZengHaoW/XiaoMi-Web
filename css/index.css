@@ -359,15 +359,15 @@ ul.left-menu li a:hover {
     margin-top: 14px;
     float: left;
     width: 228px;
-    height: 164px;
-    padding: 3px 3px 3px 3px;
+    height: 170px;
+    padding: 0 3px 0 3px;
+    background: #5f5750;
 }
 .home ul li {
     float: left;
     padding: 0 3px;
     width: 70px;
     height: 82px;
-    background: #5f5750;
 }
 .home ul li a {
     display: block;
