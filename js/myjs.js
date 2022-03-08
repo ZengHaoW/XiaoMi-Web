@@ -1,8 +1,6 @@
 const change_img= document.querySelector(".prev-next").children;
 const backward = change_img[0];
 const forward = change_img[1];
-backward.style.zIndex = "20";
-forward.style.zIndex = "20";
 let list = document.querySelectorAll("ul.img-list li");
 
 let current_id = 0;
