@@ -1,3 +1,4 @@
+/********************************************************************轮播图********************************************************************/
 const change_img= document.querySelector(".prev-next").children;
 const backward = change_img[0];
 const forward = change_img[1];
@@ -57,3 +58,26 @@ for (let i = 0; i < pointer_list.length; i++) {
 
     }
 }
+/********************************************************************轮播图********************************************************************/
+
+
+
+/********************************************************************good-info-list下拉********************************************************************/
+
+let good_info_list = document.querySelectorAll(".show-goods a");
+let good_info_list_length = good_info_list.length;
+let bbb = document.querySelector(".goods-info").children;
+for (let i = 0; i < good_info_list_length; i++) {
+    good_info_list[i].onmouseover = function () {
+        remove();
+        bbb[i].style.display = "block";
+    }
+
+}
+
+function remove() {
+    for (let i = 0; i < bbb.length; i++) {
+        bbb[i].style.display = "none";
+    }
+}
+/********************************************************************good-info-list下拉********************************************************************/

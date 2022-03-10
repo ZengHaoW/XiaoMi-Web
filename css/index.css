@@ -212,7 +212,7 @@ ul.left-menu li a:hover {
 .header-nav li a {
     display: block;
     font-size: 16px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .header-nav li a:hover {
@@ -245,6 +245,72 @@ ul.left-menu li a:hover {
 
 }
 
+.goods-info li {
+    width: 180px;
+    height: 166px;
+    float: left;
+    padding: 35px 12px 0 12px;
+}
+.goods-info-list-1 {
+    display: none;
+}
+.goods-info-list-2 {
+    display: none;
+}
+.goods-info-list-3 {
+    display: none;
+}
+.goods-info-list-4 {
+    display: none;
+}
+.goods-info-list-5 {
+    display: none;
+}
+.goods-info-list-6 {
+    display: none;
+}
+.goods-info-list-7 {
+    display: none;
+}
+.goods-info li:not(:first-of-type)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 65px;
+    padding-top: 35px;
+    background: #E0E0E0;
+    margin-left: -12px;
+}
+.goods-info li a {
+    width: 180px;
+    height: 166px;
+}
+.goods-info li div.img {
+    width: 160px;
+    height: 110px;
+    margin: 0 auto 16px auto;
+}
+
+.goods-info li img{
+
+    width: 160px;
+    height: 110px;
+}
+.goods-info li a .title{
+    width: 180px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+}
+.goods-info li a .price{
+    width: 180px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #ff6700;
+    text-align: center;
+}
 .search-wrapper {
     width: 296px;
     height: 50px;
